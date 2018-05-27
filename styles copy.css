@@ -1,0 +1,288 @@
+body {
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    background: url("https://ingeniousscribblers.in/wp-content/uploads/2017/02/Gray-texture-pictures-backgrounds-download.jpg");
+    color: rgb(119, 119, 119);
+
+}
+
+header {
+    flex-flow: row wrap;
+    background-color: #ffffff;
+    height: 80px;
+    align-items: center;
+    border-bottom: 2px solid rgba(119, 119, 119, 0.7);
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.name-box {
+    align-items: center;
+    flex: 1;
+    height: 100%;
+}
+
+h1 {
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    height: 100%;
+    padding:0 10px;
+    background-color: #4aaaa5;
+    font-size: 35px;
+    color: #ffffff;
+}
+
+header nav {
+    flex: 1;
+    font-size: 20px;
+}
+
+nav ul {
+    list-style: none;
+}
+
+header nav li + li {
+    border-left: 3px solid #777777;
+    
+}
+
+.navitems {
+    text-decoration: none;
+    color: #777777;
+    margin: 0;
+    padding: 20px;
+}
+
+.navitems:hover {
+    color: skyblue;
+    font-size: 1.3em;
+}
+
+/* main content */
+.main {
+    background-color: white;
+    border: 2px solid lightslategray;
+    padding: 36px;
+    width: 960px;
+    margin: 50px auto;
+}
+
+.main header {
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    justify-content: flex-start;
+    font-size: 40px;
+    color: #4aaaa5;
+
+}
+
+.inner-wrapper {
+    padding-top: 40px;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+}
+
+.introduction {
+    font-size: 24px;
+    line-height: 130%
+}
+
+/* index section */
+
+.first-para {
+    flex: 1;
+    margin: 0 30px;
+
+}
+
+.introduction > p {
+    margin-top: 16px;
+}
+
+.introduction img { 
+    /* position: absolute;
+    float: left; */
+    width: 25%;
+    left: 20px;
+    height: 100%;
+    /* top: 120px; */
+
+}
+
+
+/* .bottom-wrapper {
+    top: 400px;
+    left: 20px;
+    position: absolute;
+    margin: 15px;
+    height: 68%;
+    overflow: auto;
+} */
+
+
+
+/* CONTACT STYLE */
+
+#form1 {
+    width: 100%;
+}
+
+.inputContact {
+    width: 80%;
+    height: 25px;
+}
+
+textarea {
+    font-size: 20px;
+    width: 80%;
+    height: 250px;
+}
+
+button {
+    margin-top: 35px;
+    font-size: 20px;
+    width: auto;
+    height: 50px;
+    display: inline-block;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    background: #4aaaa5;
+    color: #FFF;
+    border-bottom: solid 4px #627295;
+    border-radius: 3px;
+}
+
+button:active {
+    -ms-transform: translateY(4px);
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px);
+    border-bottom: none;
+}
+
+
+
+/* Portfolio section */
+
+.grid-item {
+    width: 33%;
+    margin-bottom: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-container img {
+    height: 146px;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    flex-flow: row wrap;
+    background-color: #666666;
+    height: 40px;
+    align-items: center;
+    border-top: 6px solid rgba(5, 49, 36, 0.7);
+}
+
+h3 {
+    color: #fff;
+    font-size: 13px;
+    text-align: center;
+}
+
+
+
+
+
+
+@media only screen and (max-width: 980px) {
+    .main {
+        width: 600px;
+        margin: 20px 65px;
+    }
+    .introduction {
+        font-size: 16px;
+    }
+
+    .form-color {
+        background-color: #bbbbbb3d;
+        margin-bottom: 15px;
+    }
+
+    .grid-item {
+        margin-bottom: 32px;
+        margin-right: 57px;
+    }
+
+    .inner-wrapper-portfolio {
+        justify-content: center;
+    }
+}
+
+
+@media only screen and (max-width: 768px) {
+    .main {
+        width: 565px;
+        padding: 25px;
+    }
+
+    .inner-wrapper {
+        padding-top: 25px;
+    }
+
+    .introduction img {
+        width: 34%;
+    }
+
+    .first-para {
+        margin: 0 13px;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    .main {
+        width: 80%;
+        padding: 25px;
+        margin: 95px auto;
+    }
+
+    .introduction img {
+        width: 100%;
+        height: 450px;
+    }
+
+    header nav {
+        flex: auto;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        height: 80px;
+        background-color: white;
+        align-items: center;
+        border-bottom: solid 2px lightgray;
+        font-size: 20px;
+    }
+
+    .smallHeader {
+        background-color: #4aaaa5;
+    }
+
+    .first-para {
+        margin: 0;
+        margin-top: 15px;
+    }
+
+    .grid-item {
+        width: 100%;
+        margin-right: 0;
+
+    }
+
+    .grid-container img {
+        height: 100%;
+        width: 98%;
+    }
+}
