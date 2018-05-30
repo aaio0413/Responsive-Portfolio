@@ -7,7 +7,6 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="css/resetResponsive.css">
     <link rel="stylesheet" type="text/css" href="css/stylesResponsive.css">
-      
 </head>
 <body>
 
@@ -25,6 +24,14 @@
     <section class="main">
         <header class="flex-center">
             <h2>About Me</h2>
+            <div id="light-saber">
+                <div onclick="toggleIcon()" class="toggle-icon">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+
         </header>
         <div class="inner-wrapper flex-center introduction">
             <img src="https://media.licdn.com/dms/image/C4D03AQG08UOUl3bpGg/profile-displayphoto-shrink_200_200/0?e=1531958400&v=beta&t=ga1jrBRMgALXT5AeV5V-WbuO5KlO8E69h1Gqe7hoDcM" alt="Profile Picture of Takahiro">
@@ -46,5 +53,13 @@
     </footer>
 
 </body>
+<script>
+        function toggleIcon() {
+            var lightSaberElement = document.getElementById('light-saber');
+            lightSaberElement.classList.toggle("pushed");
+        };
+            // document.querySelector('#light-saber').toggleClass("pushed");
 
+        </script>
+    
 </html>
